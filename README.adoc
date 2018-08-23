@@ -1,5 +1,15 @@
-### Configurazioni Narayana LRA ###
-1) Download dell'LRA coordinator da qui http://narayana.io/downloads/index.html version 5.9.0
-2) Posizionati sulla cartella che contiene il jar relativo al coordinator Narayana: $ cd /Users/mvocale/Progetti/Hands_on_Cloud_Native_Microservices_with_Java_EE/ch5/narayana-full-5.9.0.Final/rts/lra
-3) Lanciamo il coordinator e, per evitare conflitti di porte, lo facciamo partire sulla 8580: $ java -jar lra-coordinator-swarm.jar -Dswarm.http.port=8580
-4) 
+# Microservice Long Running Action Scenario
+
+In this scenario we implemented a simple use case to show the usage of Microprofile Long Running Action Specifications (LRA).
+
+In order to test it you need to download the Narayana version here http://narayana.io/downloads/index.html and choosing the version 5.9.0.
+
+Then you need to unzip the content into a favourite folder, that we named $NARAYANA_HOME and go to it.
+
+Finally you should run the Narayana LRA coordinator using the following command
+
+''' 
+$ java -jar /rts/lra/lra-coordinator-swarm.jar -Dswarm.http.port=8580
+'''
+
+The port that I have set is the one used in our usecase but you can change it (remember to do the same in the subprojects).
