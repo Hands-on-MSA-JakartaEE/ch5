@@ -131,7 +131,11 @@ public class FootballPlayerMarketREST {
 
             // Check about the price of the offer: if it is less than 80% of the
             // value of the football player I will refuse the offer
-            BigInteger price = player.getPrice();
+            BigInteger price = footballPlayerOffer.getPrice();
+            
+            LOG.log(Level.FINE, "Value of offer price {0}", price);
+            LOG.log(Level.FINE, "Value of football player price {0}", player.getPrice());
+            
             if ((price.multiply(new BigInteger("100")).divide(player.getPrice())).
                     intValue() < 80) {
                 throw new WebApplicationException("The offer is unacceptable!",
