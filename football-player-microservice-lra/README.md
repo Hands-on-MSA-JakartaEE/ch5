@@ -1,4 +1,4 @@
-# JPA, JAX-RS, CDI and JTA .war Example of Microservice application
+# JPA, JAX-RS, CDI and JTA .war Example of Microservice application that supports the Long Running Action microprofile specification.
 
 This example takes a normal JPA, CDI, JAX-RS and JTA build, and wraps it into a -swarm runnable jar.
 
@@ -25,6 +25,12 @@ The project adds a <plugin> to configure thorntail-maven-plugin to create the ru
             </goals>
         </execution>
     </executions>
+    <configuration>
+        <properties>
+            <lra.http.host>${lra.http.host}</lra.http.host>
+            <lra.http.port>${lra.http.port}</lra.http.port>
+        </properties>
+    </configuration>
 </plugin>
 ```
 
@@ -34,8 +40,7 @@ Run
 You can run it many ways:
 
 ```console
-    $ mvn package && java -jar target/football-player-microservice-thorntail.jar
-    $ mvn thorntail:run
+    $ mvn package && java -jar target/football-player-microservice-lra-thorntail.jar -Dlra.http.port=8580
 ```
 
 Use
