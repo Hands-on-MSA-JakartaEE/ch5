@@ -32,3 +32,11 @@ football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF
 football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/create.sql
 football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/load.sql
 football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/persistence.xml
+football-player-offer-microservice-lra/nbproject/project.properties
+football-player-offer-microservice-lra/target/football-player-offer-microservice-lra.war.original
+football-player-offer-microservice-lra/target/classes/project-defaults.yml
+football-player-offer-microservice-lra/target/classes/META-INF/create.sql
+football-player-offer-microservice-lra/target/classes/META-INF/persistence.xml
+football-player-offer-microservice-lra/target/football-player-offer-microservice-lra/WEB-INF/classes/project-defaults.yml
+football-player-offer-microservice-lra/target/football-player-offer-microservice-lra/WEB-INF/classes/META-INF/create.sql
+football-player-offer-microservice-lra/target/football-player-offer-microservice-lra/WEB-INF/classes/META-INF/persistence.xml
