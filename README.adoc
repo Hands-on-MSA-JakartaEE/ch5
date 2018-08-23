@@ -8,8 +8,8 @@ Then you need to unzip the content into a favourite folder, that we named $NARAY
 
 Finally you should run the Narayana LRA coordinator using the following command
 
-''' 
+```console
 $ java -jar /rts/lra/lra-coordinator-swarm.jar -Dswarm.http.port=8580
-'''
+```
 
 The port that I have set is the one used in our usecase but you can change it (remember to do the same in the subprojects).
