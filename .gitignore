@@ -21,3 +21,14 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+football-player-market-microservice-lra/target/classes/project-defaults.yml
+football-player-market-microservice-lra/target/football-player-market-microservice-lra/WEB-INF/classes/project-defaults.yml
+football-player-microservice-lra/target/football-player-microservice-lra.war.original
+football-player-microservice-lra/target/classes/project-defaults.yml
+football-player-microservice-lra/target/classes/META-INF/create.sql
+football-player-microservice-lra/target/classes/META-INF/load.sql
+football-player-microservice-lra/target/classes/META-INF/persistence.xml
+football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/project-defaults.yml
+football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/create.sql
+football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/load.sql
+football-player-microservice-lra/target/football-player-microservice-lra/WEB-INF/classes/META-INF/persistence.xml
