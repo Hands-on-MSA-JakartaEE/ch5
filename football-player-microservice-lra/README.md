@@ -1,6 +1,6 @@
-# API Gateway simulator Example of Microservice Long Running Action application.
+# JPA, JAX-RS, CDI and JTA .war Example of Microservice application
 
-This example builds a coarse grained controller that performs the interactions with the football-player-microservice-lra and football-player-offer-microservice-lra microservices.
+This example takes a normal JPA, CDI, JAX-RS and JTA build, and wraps it into a -swarm runnable jar.
 
 It uses a PostgreSQL database. In order to run the project you need to install PostgreSQL docker image using the following command:
 
@@ -25,13 +25,6 @@ The project adds a <plugin> to configure thorntail-maven-plugin to create the ru
             </goals>
         </execution>
     </executions>
-    <configuration>
-        <properties>
-            <lra.http.host>${lra.http.host}</lra.http.host>
-            <lra.http.port>${lra.http.port}</lra.http.port>
-            <swarm.port.offset>400</swarm.port.offset>
-        </properties>
-    </configuration>
 </plugin>
 ```
 
@@ -41,9 +34,10 @@ Run
 You can run it many ways:
 
 ```console
-    $ mvn package && java -jar target/football-player-market-microservice-lra-thorntail.jar -Dlra.http.port=8580
+    $ mvn package && java -jar target/football-player-microservice-thorntail.jar
+    $ mvn thorntail:run
 ```
 
 Use
 
-http://localhost:8480/footballplayer-market
+http://localhost:8080/footballplayer
