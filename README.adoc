@@ -1,0 +1,5 @@
+### Configurazioni Narayana LRA ###
+1) Download dell'LRA coordinator da qui http://narayana.io/downloads/index.html version 5.9.0
+2) Posizionati sulla cartella che contiene il jar relativo al coordinator Narayana: $ cd /Users/mvocale/Progetti/Hands_on_Cloud_Native_Microservices_with_Java_EE/ch5/narayana-full-5.9.0.Final/rts/lra
+3) Lanciamo il coordinator e, per evitare conflitti di porte, lo facciamo partire sulla 8580: $ java -jar lra-coordinator-swarm.jar -Dswarm.http.port=8580
+4) 
