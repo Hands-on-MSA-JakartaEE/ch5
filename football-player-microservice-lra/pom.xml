@@ -98,17 +98,6 @@
             <artifactId>postgresql</artifactId>
             <version>${version.postgresql}</version>
         </dependency>
-        <dependency>
-            <groupId>io.thorntail</groupId>
-            <artifactId>arquillian</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.jboss.resteasy</groupId>
-            <artifactId>resteasy-client</artifactId>
-            <version>${version.resteasy}</version>
-            <scope>test</scope>
-        </dependency>
         <!-- CORS Support For JAX-RS 2.0 / JavaEE 7  -->
         <dependency>
             <groupId>com.airhacks</groupId>
