@@ -50,7 +50,12 @@ public class FootballPlayerMarketClient {
         BigInteger priceParameter = args.length > 0 && args[0] != null
                 ? new BigInteger(args[0])
                 : new BigInteger("22");
-        FootballPlayerOffer offer = new FootballPlayerOffer(Long.valueOf("1"),
+        
+        String idFootballPlayer = args.length > 0 && args[1] != null
+                ? args[1]
+                : "1";
+        
+        FootballPlayerOffer offer = new FootballPlayerOffer(Long.valueOf(idFootballPlayer),
                 Long.valueOf("1"), priceParameter, null, null);
 
         // Send the offer
